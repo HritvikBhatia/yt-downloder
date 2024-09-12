@@ -1,0 +1,65 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3c4a52;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Container for the form */
+div {
+    background-color: #353341;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+/* Form elements */
+label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    display: block;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}
