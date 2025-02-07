@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Downloader</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="download-box">
+        <input type="text" id="text" placeholder="Enter URL here..." />
+        <!-- Dropdown for selecting download type -->
+        <select id="downloadType">
+          <option value="video">Video</option>
+          <option value="audio">Audio</option>
+        </select>
+        <button id="button" onclick="download()">Download</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/static/main.js"></script>
+  </body>
+</html>

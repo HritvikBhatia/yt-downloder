@@ -1,0 +1,120 @@
+/* Define CSS variables for consistency */
+:root {
+    --primary-color: #8B4513;
+    --primary-hover: #A0522D;
+    --bg-gradient-start: #8B4513;
+    --bg-gradient-end: #A0522D;
+    --box-bg: #ffffff;
+    --text-color: #333;
+    --border-radius: 10px;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Global reset and base styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: #f7f7f7;
+    line-height: 1.6;
+  }
+
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+    padding: 20px;
+  }
+
+  .download-box {
+    background-color: var(--box-bg);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  #text {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  #text:focus {
+    outline: none;
+    border-color: var(--primary-hover);
+  }
+  
+  #downloadType {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  #downloadType:focus {
+    outline: none;
+    border-color: var(--primary-hover);
+  }
+  
+
+  #button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #button:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+  }
+  
+  #button:active {
+    transform: translateY(0);
+  }
+  
+  @media (max-width: 480px) {
+    .download-box {
+      padding: 1.5rem;
+    }
+    
+    #text,
+    #downloadType,
+    #button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
